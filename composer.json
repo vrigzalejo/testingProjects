@@ -1,0 +1,12 @@
+{
+    "name": "vrigzalejo/testing-projects",
+    "authors": [
+        {
+            "name": "Vrigz Alejo",
+            "email": "brigido.alejo@consumercloud.co.uk"
+        }
+    ],
+    "require": {
+        "fzaninotto/faker": "^1.5"
+    }
+}
