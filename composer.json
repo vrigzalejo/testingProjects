@@ -1,12 +1,24 @@
 {
-    "name": "vrigzalejo/testing-projects",
-    "authors": [
-        {
-            "name": "Vrigz Alejo",
-            "email": "brigido.alejo@consumercloud.co.uk"
-        }
-    ],
-    "require": {
-        "fzaninotto/faker": "^1.5"
+  "name": "vrigzalejo/testing-projects",
+  "authors": [
+    {
+      "name": "Vrigz Alejo",
+      "email": "brigido.alejo@consumercloud.co.uk"
     }
+  ],
+  "autoload": {
+    "psr-4": {
+      "GenerateDataForLGS\\": "app/lib/"
+    }
+  },
+  "archive": {
+    "exclude": [
+      "vendor",
+      ".DS_Store",
+      "*.log"
+    ]
+  },
+  "require": {
+    "fzaninotto/faker": "^1.5"
+  }
 }
