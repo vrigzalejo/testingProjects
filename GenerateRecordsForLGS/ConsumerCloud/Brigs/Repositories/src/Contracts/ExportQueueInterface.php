@@ -21,7 +21,7 @@ interface ExportQueueInterface
      *
      * @return mixed
      */
-    public function createExportQueue( $data = array(), $times = 1 );
+    public function createExportQueue( $times = 1 );
 
     /**
      * @param array $columns

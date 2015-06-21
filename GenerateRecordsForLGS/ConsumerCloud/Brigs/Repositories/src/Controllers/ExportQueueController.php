@@ -10,6 +10,7 @@ namespace ConsumerCloud\Brigs\Repositories\Controllers;
 
 
 use ConsumerCloud\Brigs\Repositories\Contracts\ExportQueueInterface;
+use ConsumerCloud\Brigs\Repositories\Contracts\FakerInterface;
 use ConsumerCloud\Brigs\Repositories\Contracts\FluentInterface;
 use Laravel\Lumen\Routing\Controller;
 
@@ -17,22 +18,18 @@ class ExportQueueController extends Controller
 {
 
     private $exportQueue;
-    private $fluent;
-    private $log;
 
 
-    public function __construct( FluentInterface $fluent, ExportQueueInterface $exportQueue )
+    public function __construct(
+        ExportQueueInterface $exportQueue
+    )
     {
         $this->exportQueue = $exportQueue;
-        $this->fluent = $fluent;
     }
 
     public function postCreateExportQueue()
     {
-//        $data = array(
-//
-//        );
-//        return $this->exportQueue->createExportQueue();
+        return $this->exportQueue->createExportQueue( 3 );
     }
 
 }

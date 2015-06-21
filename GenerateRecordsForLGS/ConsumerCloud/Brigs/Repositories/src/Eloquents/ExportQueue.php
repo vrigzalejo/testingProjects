@@ -11,4 +11,8 @@ namespace ConsumerCloud\Brigs\Repositories\Eloquents;
 
 class ExportQueue extends AbstractEloquent {
 
+    protected $fillable = ['campaign', 'consumer_data', 'created', 'delivered'];
+    protected $table = "export_queue";
+    public $timestamps = false;
+
 }

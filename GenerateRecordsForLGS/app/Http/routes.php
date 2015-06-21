@@ -23,4 +23,7 @@ $app->group( array( 'namespace' => 'ConsumerCloud\Brigs\Repositories\Controllers
                array( 'as'   => 'guzzle.any',
                       'uses' => 'GuzzleController@getUri' ) );
 
+    $app->post( '/exportqueue/create',
+               array( 'as'   => 'exportqueue.create',
+                      'uses' => 'ExportQueueController@postCreateExportQueue' ) );
 } );
