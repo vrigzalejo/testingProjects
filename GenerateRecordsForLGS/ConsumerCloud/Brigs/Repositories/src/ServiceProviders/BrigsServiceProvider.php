@@ -29,6 +29,8 @@ class BrigsServiceProvider extends ServiceProvider
                           'ConsumerCloud\Brigs\Repositories\ExportQueueRepository' );
         $this->app->bind( 'ConsumerCloud\Brigs\Repositories\Contracts\FakerInterface',
                           'ConsumerCloud\Brigs\Repositories\FakerRepository' );
+        $this->app->bind( 'ConsumerCloud\Brigs\Repositories\Contracts\ConsumerInterface',
+                          'ConsumerCloud\Brigs\Repositories\ConsumerRepository' );
     }
 
 

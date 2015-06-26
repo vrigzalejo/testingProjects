@@ -18,7 +18,7 @@ abstract class AbstractRepository
     private $app;
     private $validator;
 
-    public function __construct( App $app, $validator = null )
+    public function __construct( App $app = null, $validator = null )
     {
         $this->app       = $app;
         $this->validator = $validator;
